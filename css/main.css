@@ -1,0 +1,142 @@
+/* general css */
+.div-border {
+  border: 1px solid black;
+}
+html * {
+   font-family: Arial !important;
+}
+body {
+  position: fixed;
+  width: 99%;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+/* major div general css */
+.main-content-header .heading  {
+  border: 3px solid black;
+  font: 45px bold;
+  padding: 5px 0px 5px 15px;
+}
+.main-content-body {
+  margin-top: 15px;
+  height: 600px;  
+}
+
+/* data table css */
+div.data-table {
+  width: 70%;
+  height: 100%;
+  float: left;
+  margin-left: 5px;
+  overflow-y: auto;
+}
+#data-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+#data-table td, #data-table th{
+  border: 1px solid black;
+  padding-left: 6px;
+  text-align: left
+}
+th.eng_rev_type, th.type {
+  width: 27%
+}
+th.year_start, th.year_end, th.amount {
+  width: 15%
+}
+#data-table tr:nth-child(odd) {background: #ece8e8;}
+#data-table tr:first-child {background: #b3acac;}
+
+/* data filter css */
+div.data-filter {
+  width: 27%;
+  height: 100%;
+  float: right;
+  margin-left: 7px;
+  overflow-y: auto;
+  overflow-x: hidden;
+  border: 2px black solid;
+}
+div.data-filter hr {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+div.data-filter .section{
+  width: 100%;
+  float: left;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+div.data-filter .section.filter-section div {
+  margin-left: 15px;
+}
+div.data-filter .section.filter-content-update div {
+  margin-left: 30%;
+}
+
+/* select dropdown filter and text box*/
+div.data-filter .section.filter-content-update select, 
+div.data-filter .section.filter-content-update input[type="text"] {
+  height: 25px;
+  width: 150px;
+  margin: 5px 5px 2px 2px;
+  border-radius: 5px;
+  border: 2px solid black;
+  font-size: 16px;
+}
+/* filter text box placeholder*/
+div.data-filter .section.filter-content-update input[type="text"]::-webkit-input-placeholder {
+    padding-left: 5px;
+    font-size: 16px;
+}
+/* plus button */
+div.data-filter .section.filter-content-update input[type="button"] {
+  font-size: 18px;
+  width: 30px;
+  border: 2px solid black;
+  border-radius: 5px;
+}
+/* basic filter button */
+.filter-button {
+  height: 30px;
+  width: 100px;
+  background-color: #ece8e8;
+  font: 18px strong;
+  border: 2px solid black;
+}
+/* add filter button */
+.filter-button.add-filter-button {
+  border-radius: 25px;
+  margin-left: 35%;
+}
+/* update filter button */
+.filter-button.udpate-filter-button {
+  border-radius: 5px;
+  float: right;
+  margin-right: 15px;
+}
+
+/* toggle setting between desktop and mobile visibility */
+.main-content-desktop {
+  visibility: visible;
+}
+.main-content-mobile {
+  visibility: hidden;
+  padding: 100px 30px 100px 30px;
+  text-align: center;
+  font: 50px bold;
+}
+
+/* small screen criteria */
+@media screen and (max-width: 800px) {
+  .main-content-desktop {
+    display: none;
+    visibility: hidden;
+  }
+  .main-content-mobile {
+    visibility: visible;
+    color: red;
+  }
+}
